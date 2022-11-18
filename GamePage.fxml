@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakegame.GamePageController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+
+        <ImageView layoutX="0.0" layoutY="70" fitWidth="50" fitHeight="30" onMouseClicked="#toss">
+            <image>
+                <Image url="@toss.png"/>
+            </image>
+        </ImageView>
+
+
+        <ImageView layoutX="0.0" layoutY="0" fitWidth="50" fitHeight="50" onMouseClicked="#reStart">
+            <image>
+                <Image url="@restart.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView layoutX="250.0" layoutY="40" fitWidth="50" fitHeight="50" onMouseClicked="#redo">
+            <image>
+                <Image url="@redo.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView layoutX="250" layoutY="0" fitWidth="50" fitHeight="30" onMouseClicked="#undo">
+            <image>
+                <Image url="@undo.png"/>
+            </image>
+        </ImageView>
+
+        <Text layoutY="60" layoutX="10" text="Restart"/>
+
+        <ImageView layoutX="100" layoutY="150" fitWidth="100" fitHeight="100" onMouseClicked="#rollDice">
+            <image>
+                <Image url="@dice1.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text  layoutX="30" layoutY="372" text="player 1"/>
+        <ImageView  layoutX="0" layoutY="350" fitWidth="20" fitHeight="50">
+            <image>
+                <Image url="@blurgoti.png"/>
+            </image>
+        </ImageView>
+
+        <Text  layoutX="30" layoutY="425" text="player 2"/>
+        <ImageView layoutX="0" layoutY="400" fitWidth="20" fitHeight="50">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+
+        <Text fx:id="number" layoutX="150" layoutY="250"/>
+        <ImageView layoutX="300" layoutY="0" fitWidth="500" fitHeight="500">
+            <image>
+                <Image url="@ladder.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text fx:id="playerTurn" layoutX="120" layoutY="150" text="player 1 turn"/>
+        <ImageView fx:id="player1" layoutX="265" layoutY="450" fitWidth="20" fitHeight="50">
+            <image>
+                <Image url="@blurgoti.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player2" layoutX="260" layoutY="450" fitWidth="20" fitHeight="50">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+
+
+
+
+    </children>
+
+</AnchorPane>
